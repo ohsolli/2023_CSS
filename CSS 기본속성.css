@@ -1,0 +1,64 @@
+h1 {color: rgba(0, 0, 0, 0.5);}
+body 
+{
+    background: linear-gradient(45deg, Violet, Orange);
+    background-repeat: no-repear;
+    background-position: left;
+    background-attachment: fixed;
+}
+.text-center{
+    text-align: center;
+}
+.text-deco{
+    text-decoration: underline dashed 1px black;
+}
+a {
+    text-decoration: none;
+    text-decoration-line: overline;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+.text-shadow{
+    text-shadow: 1px 1px 2px rgb(255, 0, 157);
+}
+
+.test{
+    color: rgb(42, 42, 134);
+}
+.font-mono{
+    font-family: vivaldi, CookieRun Black;
+}
+.font-weight{
+    font-weight: bold;
+    font-size: 30px;
+}
+/*띄워쓰기 사용 : link 클래스 안에 있는 a태그에 접근*/
+.link a:link {
+    color: rgb(255, 4, 4)
+}
+.link a:visited {color: blueviolet;}
+.link a:hover {color: rgb(255, 239, 12);}
+.link a:active {color:rgb(255, 17, 108)}
+
+/*클래스 이름 바로 뒤에 상태를 붙여서 사용할 수 있다.*/
+.p-hover:hover{
+    color: rgb(192, 3, 82);
+}
+.list-mark{
+    list-style-image: url(./img/aaaassafdafasafsa.PNG);
+}
+
+/*두개 이상의 태그나 클래스에 동일한 css를 넣고 싶을 때
+, 를 통해서 함께 넣어줄 수 있다.*/
+.table-col, 
+.table-col td {border:1px solid black;}
+
+.table-col {border-collapse: collapse;}
+
+.table-cell, .table-cell td {border:1px solid rgb(11, 11, 167);}
+
+.ss {
+    border:1px solid blue ;
+    width: 3;
+}
