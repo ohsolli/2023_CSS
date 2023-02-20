@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {font-size: 32px;}
+        h1{font-size: 2rem;}
+        p{font-size: 10px;}
+        span {
+            font-size: 5em;
+        }
+    </style>
+    <!--serif 글꼴이 없을 경우, 우선 순위에 따라 monospace 글꼴이 적용된다.-->
+    <!--
+        html 역시 스타일 태그에서 지정하여 크기를 조정할 수 있으며, 그에 따라 rem단위도
+        변화한다.
+    -->
+</head>
+<body>
+    <!--텍스트 속성-->
+    <!--
+        - font-family: 글꼴을 정의한다.
+        - font-size: 글자 크기를 정의한다.
+        - text-align: 정렬 방식을 정의한다.
+        - color: 글자 색상을 정의한다.
+    -->
+    <!--
+        font-family:
+        요소를 구성하는 텍스트의 글꼴을 정의한다. 글꼴명을 속성값으로 지정한다.
+        여러개의 글꼴을 연달아 기입하여 우선 순위를 지정할 수 있다.
+
+        예시>
+        *{
+            font-family: Times, monospace, serif;
+        }
+        => Times를 우선 지정하되, 지원되지 않을 경우 monospace를 지정한다.
+    -->
+    <!--
+        font-size:
+        수치와 단위를 지정해 글자의 크기를 정의할 수 있다.
+        px: 모니터 상의 화소 1크기에 대응하는 절대적인 크기. 
+        절대적인 크기이기 때문에 숫자를 지정하여 값을 정해두면
+        어떠한 크기로 고정된다.
+        rem: <html> 태그의 폰트 사이즈에 대응하는 상대적인 크기.
+        html 태그는 문서의 최상위 요소이며 그 최상위 요소의 폰트 사이즈
+        를 보고 그에 따라 몇배수만큼의 크기를 지정하는 단위가 rem이다.
+        em: 부모태그(상위태그)의 font-size에 대응하는 상대적인 크기.
+
+        사용예시>
+        span{font-size: 16px;}
+        -> 절대적인 16픽셀
+        span{font-size: 2rem;}
+        -> html 태그 폰트 사이즈의 곱하기 2배의 크기
+        span{font-size: 1.5em;}
+        -> 해당 태그의 상위 태그에 지정되어 있는 폰트 사이즈
+        곱하기 1.5 크기로 지정하겠다는 의미
+    -->
+    <h1>아무 내용</h1>
+    <p>진짜 아무 내용 <span>뭐요</span>
+    </p>
+</body>
+</html>
