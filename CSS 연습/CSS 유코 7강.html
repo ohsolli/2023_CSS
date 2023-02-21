@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            border: 3px solid green;
+            padding: 10px;
+            margin: 20px;
+            width: 90px; height: 35px;
+        }
+        span{
+            width: 100px; height: 100px;
+            display: inline-block;
+        }
+        /*
+        span과 div의 결정적인 차이점은 이것이다. span은 인라인 요소
+        이기 때문에 width, height 값을 주어도 변함이 없다. 
+        span 태그에 블록 요소를 주고 싶다면, display 태그를 통해 
+        인라인 블록으로 바꿔주면 된다. 인라인 블록으로 설정하면, 
+        인라인으로 배치하면서 블록 요소의 속서을 가질 수 있다.
+        */
+    </style>
 </head>
 <body>
-    
+    <!--레이아웃은 모두 사각형이다, 박스 모델-->
+    <!--
+        우리가 html 문서를 통해 웹 콘텐츠 요소를 표현하면 
+        브라우저는 해당 문서의 내용을 바탕으로 요소를 렌더링 한다.
+        브라우저가 요소를 렌더링 할 때, 각각의 요소는 기본적으로 
+        사각형의 형태로 영역을 차지하게 된다. 
+        
+        이 영역을 '박스'라고 표현하며, CSS는 박스의 크기, 
+        위치, 속성(색, 배경, 테두리 모양 등)을 결정할 수 있다.
+        
+        하나의 박스는 다음 네 개의 영역으로 구성된다.
+        - 콘텐츠 영역 (박스의 중심부에 위치하며 너비와 높이를 가진다.)
+        - 안쪽 여백 (테두리 중심으로 박스 안 쪽에 여백을 추가하여 
+        콘텐츠와 테두리 사이의 공간을 마련할 수 있다.)
+        - 경계선(테두리) (border를 통해 다루었던 그 영역.)
+        - 바깥쪽 여백 (여백을 두어 다른 요소와 거리를 둔다.)
+        -->
+        <!-- 박스 각 영역의 크기는 어떻게 정의할 수 있는가? -->
+        <!--
+            박스의 각 영역의 크기를 정의할 수 있는 속성은 다음과 같다.
+            - 콘텐츠 영역: width, height (너비, 높이 조절)
+            - 안쪽 여백: padding 
+            - 바깥쪽 여백: margin
+            - 테두리: border-width (테두리 두께)
+        -->
+        <div>요소의 콘텐츠</div>
+        <span>check</span>
+        <!--span 태그 확인시, 바깥쪽 여백 margin으로 인해 밀려나있다.-->
 </body>
 </html>

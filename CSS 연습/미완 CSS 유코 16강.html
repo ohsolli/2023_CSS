@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class]{
+            color: blue;
+        }
+        [id=unique]{
+            color: rgb(233, 168, 71);
+        }
+    </style>
+</head>
+<body>
+    <!--선택자 더 알아보기-->
+    <!--
+        특성 선택자, 결합 선택자:
+
+        특성 선택자는 주어진 속성의 존재 여부나 그 값에 따라 요소를 선택한다.
+        
+        [class]{
+            background-color: tomato;
+        } -> 클래스 속성을 가지고 있는 요소를 선택하기
+
+        [class="item"]{
+            background-color: tomato;
+        } -> 클래스가 "item"인 요소를 선택하기
+
+        + 기호를 추가하여 요소를 선택하는 방식을 다양화할 수 있다.
+        [class *= "it"]{color:white;} => 클래스 값에 "it"가 포함되는 요소 선택
+        [class ^= "it"]{color:white;} => 클래스 값이 "it"로 시작하는 요소를 선택
+        [class $= "it"]{color:white;} => 클래스 값이 "it"로 끝나는 요소를 선택
+    -->
+    <h1>선택자 연습하기</h1>
+    <p>1태그그그</p>
+    <p class="text">2태그그그 클래스 있음</p>
+    <p id="unique">3태그그그 아이디 있음</p>
+    <p class="text">4태그그그 클래스 있음</p>
+    <p>5태그그그 <span>스판</span></p>
+</body>
+</html>

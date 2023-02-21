@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            width: 100px; height: 50px;
+            background-color: orange;
+            float: right;
+        }
+        #b{
+            width: 100px; height: 100px;
+            background-color: royalblue;
+            float: left;
+        }
+        p{
+            clear: left;
+        }
+        /*p태그의 경우에는 나머지 공간에서 기본적인 문서의 흐름대로
+        렌더링이 된다는 것을 확인할 수 있다.*/
+    </style>
+</head>
+<body>
+    <!--float 속성-->
+    <!--
+        float 속성은 요소가 문서의 일반적인 흐름에서 제외되어 
+        자신을 포함하고 있는 컨테이너 왼쪽이나 오른쪽에 배치되게 한다.
+
+        none: 기본값, 원래 상태
+        left: 자신을 포함하고 있는 박스의 왼편에 떠 있어야 함
+        right: 자신을 포함하고 있는 박스의 오른편에 떠 있어야 함
+        => 문서의 흐름에선 제외되지만, 필요한 만큼의 공간은 차지한다!
+        => 문서의 흐름이란 기본적인 순서를 뜻한다.
+    -->
+    <div id="a"></div>
+    <div id="b"></div>
+    <p>하이 하이</p>
+    <p>하이 하이</p>
+    <p>하이 하이</p>
+    <p>하이 하이</p>
+    <p>하이 하이</p>
+    <!--clear 속성-->
+    <!--
+        clear 속성은 float 요소 이후에 표시되는 요소가 float를 해제
+        (clean)하여 float 요소의 아래로 내려가게 할 수 있다.
+
+        none: 기본값, 아래로 이동되지 않음을 나타내는 키워드
+        left: float이 left인 요소의 아래로 내려가겠다.
+        right: float이 right인 요소의 아래로 내려가겠다.
+        both: float이 left 및 right 요소의 아래로 내려가겠다.
+        => clear: both; 를 사용하면 한 방에 해결
+    -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        /*플렉스 컨테이너는 행 방향 즉, 가로 방향으로 요소를 배치한다.*/
+        .item{
+            width: 80px; height: 80px;
+            background-color: rgb(29, 29, 114);
+        }
+    </style>
+</head>
+<body>
+    <!--flexbox-->
+    <!--flexbox란 박스 내 요소 간의 공간 배분과 정렬 기능을 제공하기 위한
+    1차원 레이아웃 모델이다. flexbox를 1차원 모델이라 부르는 이유는,
+    레이아웃을 다룰 때 한 번에 하나의 차원(행이나 열)만을 다룬다는 특성 때문이다.
+
+    flexbox를 flex 컨테이너라고도 한다. (요소들을 포함하기 때문에)
+    flex 컨테이너를 만들기 위해서는 컨테이너에 display:flex; 를 적용해야 한다.-->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <!--
+        flex에는 '주축(main-axis)'과 '교차축(cross-axis)'이 있다.
+        세로 방향이 주축일 경우, 자연스럽게 가로 방향이 교차축이 된다. (교차되므로)
+    -->
+    <!--
+        flex-direction:
+        flext-direction 속성은 flexbox 내 요소를 배치할 때 사용할 
+        주축 및 방향 (정방향, 역방향)을 지정한다. 
+
+        row: 기본값. 주축은 행이고 방향은 콘텐츠의 방향과 동일
+        row-reverse: 주축은 행이고 방향은 콘텐츠의 방향과 반대
+        column: 주축은 열이고 방향은 콘텐츠의 방향과 동일
+        column-reverse: 주축은 열이고 방향은 콘텐츠의 방향과 반대
+    -->
+    <!--
+        여러개의 내부 엘리먼트를 담고 있는 외부 엘리먼트에 display: flex;
+        스타일을 적용하면, 외부 엘리먼트는 flex container가 되고, 내부 엘리먼트는
+        자동으로 flex item이 된다. (떡꼬치처럼 생각하면 된다.)
+
+        * 배치 방향 쉽게 정리 (ㅇ는 아이템 요소.)
+        - row: ㅇㅇㅇㅡ 
+        - row-reverse: ㅡㅇㅇㅇ
+        - column / column-reverse: 
+        ㅇ ㅣ
+        ㅇ ㅇ
+        ㅇ ㅇ
+        ㅣ ㅇ
+    -->
+</body>
+</html>

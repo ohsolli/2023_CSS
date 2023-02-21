@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pos{
+            width: 200px; height: 200px;
+            background-color: brown;
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        이전 내용 이어서.
+
+        position: fixed;
+        요소를 일반적인 문서 흐름에서 제거하고, 지정된 위치에 고정.
+
+        .pos{
+            width: 200px; height: 200px;
+            background: peru;
+            position: fixed;
+            top: 150px; left: 130px; 
+        }
+        => 위에서부터 50px, 왼쪽에서부터 50px 떨어진 자리에서 움직이지 않는다.
+    -->
+    <div>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+        첫번째<br>하이<br>ㅎㅇ<br>
+    </div>
+    <div class="pos"></div>
+    <div>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+        2번째<br>하이<br>ㅎㅇ<br>
+    </div>
+
+    <!--
+        position: sticky;
+        요소를 일반적인 문서 흐름에 따라 배치하고,
+        스크롤 되는 가장 가까운 상위 요소에 대해 오프셋을 적용한다.
+
+        .pos{
+            width: 200px; height: 200px;
+            background: peru;
+            position: sticky;
+            top: 150px; left: 130px; 
+        }
+        => 처음에는 문서의 흐름대로 가다가 스크롤 이동을 할 때
+        자신이 정해진 위치가 있으면 그 곳에 끈끈하게 달라붙는 것이다.
+    -->
+</body>
+</html>
