@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 3px solid red;
+            display: none;
+            /*display-none 디스플레이를 보이지 않도록 설정했으므로,
+            화면상에 출력되지 않는다.*/
+            }
+        span {
+            border-width: 5px; 
+            border-style: dashed;
+            border-color: rgb(100%, 50%, 0%);
+            display: inline-block;
+            /*인라인 요소는 기본적으로 자기가 필요한 영역만 차지하기 때문에
+            높이와 너비를 의미로 조정할 수가 없다. 그러나 블록은 그게 가능하다.
+            따라서 인라인 요소의 너비와 높이를 임의로 조정할 수 있게 하고 싶다면
+            디스플레이를 인라인 블록으로 설정해주면 된다.*/
+            }
+    </style>
+</head>
+<body>
+    <!--인라인이냐? 블록이냐?-->
+    <!--
+        블록 레벨 요소: 자기가 속한 영역의 너비를 모두 차지하여 블록을 형성한다.
+        (예시: div, p, h1 등)
+        인라인 요소:
+        자기에게 필요한 만큼의 공간만 차지한다.
+        (예시: span, a 등)
+        -> a 요소를 블록 레벨로 처리하고 싶다면 
+        a{display: block;}
+        -> 블록 레벨 요소인 div 요소를 인라인으로 처리하고 싶다면
+        div{display: inline;}
+        디스플레이 속성은 선택된 요소를 블록 레벨과 인라인 요소
+        어느쪽으로 처리할지 결정하는 속성입니다.
+    -->
+    <!--display 속성 값-->
+    <!--
+        display에는 미리 정의되어 있는 키워드를 속성값으로 지정한다.
+        inline: 인라인으로 처리한다.
+        block: 블록 레벨로 처리한다.
+        inline-block: 인라인으로 배치하되, 
+        블록 레벨 요소의 속성을 추가할 수 있도록 처리한다.
+        none: 디스플레이(표시)하지 않는다.
+    -->
+    <!--border-->
+    <!--
+        border 속성을 사용하면 요소가 차지하고 있는 영역에 테두리를 그릴 수 있다.
+        border 속성에는 속성값으로 테두리의 두께, 모양, 크기 등을 함께 지정할 수 있는데,
+        이러한 속성을 '단축속성'이라고 지칭한다. 
+
+        예시>
+        span{border: 2px solid green;} => 스판 태그
+        => 두께가 2px인 직선 모양(solid)의 초록(green) 테두리를 만들어줘!
+        위와 같이 단축 속성은 여러가지 속성을 함께 지정해 줄 수 있는 속성이다.
+    -->
+    <div>나는야 블록 레벨</div>
+    <span>나는야 인라인</span>
+</body>
+</html>

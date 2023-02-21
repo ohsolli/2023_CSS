@@ -8,7 +8,11 @@
     <style>
         html {font-size: 32px;}
         h1{font-size: 2rem;}
-        p{font-size: 10px;}
+        p{
+            text-align: center;
+            font-size: 10px;
+            color: palevioletred;
+        }
         span {
             font-size: 5em;
         }
@@ -61,5 +65,29 @@
     <h1>아무 내용</h1>
     <p>진짜 아무 내용 <span>뭐요</span>
     </p>
+
+    <!--Text-align-->
+    <!--블록 내에서 텍스트의 정렬 방식을 정의한다. 미리 정의된 키워드 값을 지정한다.-->
+    <!--
+        left/right: 왼쪽 또는 오른쪽으로 정렬한다.
+        center: 가운데 정렬한다.
+        justify: 양끝을 정렬한다.
+
+        사용예시>
+        p {text-align: right;} -->
+
+    <!--color-->
+    <!--텍스트의 색상을 정의한다. 다양한 방법으로 색상을 지정할 수 있다.-->
+    <!--
+        키워드: 미리 정의된 색상별 키워드를 사용한다. (ex, red, blue)
+        한마디로 단어를 뜻한다. 
+        RGB 색상 코드: # + 여섯자리 16진수 값 형태로 지정한다.
+        RGB 함수: Red, Green, Blue의 수준을 각각 정의해 지정한다.
+        => 놀랍게도, 모두 같은 색입니다! 
+        -> RGB 색상은 빛의 삼원색(Red, Green, Blue)을 혼합하여
+        색을 정의하는 방식이다. 모두 수치가 가장 높을 때 흰색이 된다.
+        -> span {color: #000000;} <- r00 g00 b00 끊어서 표현한 것.
+        -> span {color: rgb(70%, 10%, 20%);} 비율을 끊어서 나타내기도 한다.
+    -->
 </body>
 </html>
