@@ -1,0 +1,18 @@
+div, span {
+    width: 88px;
+    height: 88px;
+    margin: 20px;
+    background: skyblue;
+}
+
+div {
+    background: skyblue;
+    display: inline-block;
+    /*인라인처럼 한 줄로 이어서 표기가 되지만 블럭 상태*/
+}
+
+span {
+    background: seagreen;
+    display: block;
+    /*블럭은 한 줄을 차지함*/
+}
