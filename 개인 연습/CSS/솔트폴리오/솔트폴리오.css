@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(225, 244, 255);
+}
+.frame {
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*navigator*/
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li {
+    display: inline;
+    margin: 0;
+    margin-left: 15px;
+}
+ul {
+    margin: 0;
+}
+.site-name {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    font-size: 27px;
+    color: rgba(0, 140, 255, 0.322);
+}
+.nav-menu {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a{
+    color: rgba(121, 195, 255, 0.692);
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/*dashboard*/
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px
+}
+
+.korean-comment {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
